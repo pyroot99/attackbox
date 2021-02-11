@@ -44,4 +44,4 @@ curl -sLf https://spacevim.org/install.sh | bash
 # Installing OhMyFish
 echo -e "[+]${BGreen}Installing SpaceVim${Color_Off}"
 curl -L https://get.oh-my.fish | fish
-fish -c "omf install batman"
+fish -c "omf install neolambda"
