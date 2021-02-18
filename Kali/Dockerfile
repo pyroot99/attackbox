@@ -10,8 +10,8 @@ RUN git clone https://gitlab.com/dwt1/shell-color-scripts.git /tmp/shell-color-s
 RUN cd /tmp/shell-color-scripts
 RUN rm -rf /opt/shell-color-scripts || return 1
 RUN mkdir -p /opt/shell-color-scripts/colorscripts || return 1
-RUN cp -rf colorscripts/* /opt/shell-color-scripts/colorscripts
-RUN cp colorscript.sh /usr/bin/colorscript
+RUN cp -rf /tmp/shell-color-scripts/colorscripts/* /opt/shell-color-scripts/colorscripts
+RUN cp /tmp/shell-color-scripts/colorscript.sh /usr/bin/colorscript
 RUN fish -c "omf install batman" 2>/dev/null
 WORKDIR /root
 ENTRYPOINT ["fish"]
