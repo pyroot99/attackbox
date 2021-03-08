@@ -1,6 +1,6 @@
 FROM kalilinux/kali-bleeding-edge
 RUN apt update && apt upgrade -y && apt full-upgrade -y && apt dist-upgrade -y
-RUN apt install sudo netcat socat powershell python3-pip neovim nodejs npm vim python3 fish exa tmux metasploit-framework nmap tcpdump dirbuster gobuster dirb -y
+RUN apt install sudo openvpn netcat socat powershell python3-pip neovim nodejs npm vim python3 fish exa tmux metasploit-framework nmap tcpdump dirbuster gobuster dirb -y
 COPY dotfiles /tmp/dotfiles
 COPY coc/ /root/.config/coc
 RUN mkdir -p /root/.config/fish
